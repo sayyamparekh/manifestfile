@@ -6,12 +6,12 @@ spec:
     type: NodePort
     selector: 
       app: new-app
-    Ports:
-      - Port: 80
+    ports:
+      - port: 80
         targetPort: 80
         name: nginx
         protocol: TCP
-      - Port: 8080
+      - port: 8080
         targetPort: 8080
         name: tomcat
         protocol: TCP
