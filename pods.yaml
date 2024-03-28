@@ -7,14 +7,12 @@ metadata:
 spec:
     containers:
       - name: nginx
-        image: nginx
-        ports: 
-        - name: nginx-web
-          containerPort: 80
-          protocol: TCP
-      - name: Tomcat
-        image: tomcat
-        ports: 
-        - name: tomcat-web
-          containerPort: 8080
-          protocol: TCP
+          image: nginx
+          port: 
+            - containerPort: 80
+              protocol: TCP
+      - name: tomcat
+          image: tomcat
+          port: 
+            - containerPort: 8080
+              protocol: TCP
